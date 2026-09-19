@@ -1,0 +1,15 @@
+{
+  // Tinymist (Typst)
+  // "never":  das PDF entsteht nur beim Klick auf die Schaltflaeche "Export PDF"
+  // "onSave": das PDF wird zusaetzlich bei jedem Speichern neu geschrieben
+  "tinymist.exportPdf": "never",
+  "tinymist.outputPath": "$root/$name",
+  "[typst]": {
+    "editor.wordWrap": "on",
+    "editor.defaultFormatter": "myriad-dreamin.tinymist"
+  },
+  "[typst-code]": {
+    "editor.defaultFormatter": "myriad-dreamin.tinymist"
+  },
+  "editor.wordWrap": "on"
+}

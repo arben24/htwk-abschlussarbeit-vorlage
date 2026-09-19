@@ -1,0 +1,23 @@
+# ---------------------------------------------------------------------------
+# Typst
+# ---------------------------------------------------------------------------
+# Kompiliertes Dokument im Wurzelverzeichnis (wird bei jedem Speichern neu
+# erzeugt und gehoert daher nicht in die Versionsverwaltung).
+/main.pdf
+/*.pdf
+
+# Hinweis: PDF-Dateien in Abbildungen/ bleiben bewusst versioniert, da sie
+# Quellmaterial sind und nicht beim Kompilieren entstehen.
+!Abbildungen/**/*.pdf
+
+# Lokaler Paket-Cache, falls er im Projekt liegt
+.typst-cache/
+
+# ---------------------------------------------------------------------------
+# Editor und Betriebssystem
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
