@@ -20,8 +20,9 @@ Platzhaltertexten.
 - Beispiele für Abbildungen (eingebundene Grafik und mit CeTZ gezeichnetes
   Diagramm), Tabellen, nummerierte Formeln und Querverweise
 - Literaturverzeichnis über BibTeX mit IEEE-Zitierstil und Beispieleinträgen
-- Eidesstattliche Erklärung, Erklärung zur Nutzung von KI-Werkzeugen mit
-  Ankreuzfeldern und optionaler Sperrvermerk
+- Eigenständigkeitserklärung und Erklärung zur Nutzung von KI-Werkzeugen auf
+  einer gemeinsamen Seite, mit Ankreuzfeldern und optionaler Werkzeugtabelle
+- Optionaler Sperrvermerk
 
 ## Benötigte Werkzeuge
 
@@ -141,8 +142,7 @@ typst compile main.typ     # einmalige Ausgabe als main.pdf
 │       ├── 02_Abstract.typ, 02_01_Abstract_EN.typ
 │       ├── 03_Abkuerzungsverzeichnis.typ, 04_Symbolverzeichnis.typ
 │       ├── 09_Literaturverzeichnis.typ
-│       ├── 10_Eidesstattliche_Erklaerung.typ
-│       ├── 11_KI_Erklaerung.typ
+│       ├── 10_Erklaerungen.typ
 │       └── globals.typ        gemeinsame Hilfsfunktionen und Farben
 ├── Abbildungen/
 │   ├── logos/                 HTWK-Logos für Titelblatt und Aufgabenstellung
@@ -196,8 +196,9 @@ vollständiges Beispiel liegt in
 `Abbildungen/beispiel/beispiel_blockdiagramm.typ`. Achtung: Pfade löst Typst
 relativ zu der Datei auf, in der der `image()`-Aufruf steht.
 
-**Erklärung zur Nutzung von KI-Werkzeugen.** Die Seite liegt in
-`Sections/notwendig/11_KI_Erklaerung.typ` und wird über die zugehörige
+**Erklärungen am Ende der Arbeit.** Eigenständigkeitserklärung und Erklärung
+zur Nutzung von KI-Werkzeugen stehen gemeinsam auf einer Seite. Sie liegt in
+`Sections/notwendig/10_Erklaerungen.typ` und wird über die zugehörige
 `#include`-Zeile in `main.typ` ein- und ausgeblendet. Innerhalb der Datei gibt
 es zwei Stellschrauben:
 

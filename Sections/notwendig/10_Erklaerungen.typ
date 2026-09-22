@@ -1,13 +1,18 @@
 #import "../../Daten.typ": *
 
 // ---------------------------------------------------------------------------
-// Erklärung zur Nutzung von KI-Werkzeugen
+// Eigenständigkeitserklärung und Erklärung zur Nutzung von KI-Werkzeugen
+//
+// Beide Erklaerungen stehen bewusst zusammen auf einer Seite: Der Wortlaut
+// zur Nutzung von KI-Werkzeugen bildet den Kern, die zusaetzlichen Aussagen
+// der klassischen Eidesstattlichen Erklaerung (keine andere
+// Pruefungsbehoerde, Hinweis auf die Rechtsfolgen) sind darin aufgenommen.
 //
 // TODO: Wortlaut und Umfang mit der betreuenden Person und der aktuell
 // gueltigen Pruefungsordnung abgleichen. Einige Fakultaeten geben ein eigenes
 // Formular vor, das dann anstelle dieser Seite verwendet wird.
 //
-// Die gesamte Erklaerung laesst sich in main.typ ueber die zugehoerige
+// Die gesamte Seite laesst sich in main.typ ueber die zugehoerige
 // #include-Zeile ein- und ausblenden.
 // ---------------------------------------------------------------------------
 
@@ -45,13 +50,17 @@
 )[]
 
 // --- Erklärung ------------------------------------------------------------
-#text(size: 18pt, weight: "bold")[Erklärung zur Nutzung von KI-Werkzeugen]
+#text(size: 16pt, weight: "bold")[
+  Eigenständigkeitserklärung und Erklärung zur Nutzung von KI-Werkzeugen
+]
 
-#v(0.8em)
+#v(0.6em)
 
-Ich versichere, dass ich die vorliegende Arbeit selbstständig verfasst und alle Stellen, die wörtlich oder sinngemäß aus fremden Quellen übernommen wurden, als solche kenntlich gemacht habe. Sofern ich KI-basierte Werkzeuge genutzt habe, wurde deren Umfang vorab mit meiner Betreuerin oder meinem Betreuer abgestimmt. Die Verantwortung für Auswahl, Prüfung und inhaltliche Korrektheit aller übernommenen Ergebnisse trage ich vollständig selbst.
+Ich versichere, dass ich die vorliegende Arbeit selbstständig, ohne Hilfe Dritter und ohne Benutzung anderer als der angegebenen Quellen und Hilfsmittel verfasst habe. Alle Stellen, die wörtlich oder sinngemäß aus fremden Quellen übernommen wurden, sind als solche einzeln kenntlich gemacht. Sofern ich KI-basierte Werkzeuge genutzt habe, wurde deren Umfang vorab mit meiner Betreuerin oder meinem Betreuer abgestimmt und ist nachstehend vollständig angegeben. Die Verantwortung für Auswahl, Prüfung und inhaltliche Korrektheit aller übernommenen Ergebnisse trage ich vollständig selbst.
 
-#v(0.8em)
+Diese Arbeit ist bislang keiner anderen Prüfungsbehörde vorgelegt und auch nicht veröffentlicht worden. Ich bin mir bewusst, dass eine falsche Erklärung rechtliche Folgen haben wird.
+
+#v(0.6em)
 
 Ich habe KI-Werkzeuge für folgende Zwecke eingesetzt (Zutreffendes ankreuzen):
 
@@ -80,7 +89,7 @@ Ich habe KI-Werkzeuge für folgende Zwecke eingesetzt (Zutreffendes ankreuzen):
   #ankreuzfeld(an: false)[Sonstiges: #linie(8cm)]
 ]
 
-#v(1em)
+#v(0.8em)
 
 #if zeige-werkzeugtabelle [
   Verwendete Werkzeuge:
@@ -89,10 +98,14 @@ Ich habe KI-Werkzeuge für folgende Zwecke eingesetzt (Zutreffendes ankreuzen):
 
   // TODO: Beispielzeile durch die tatsaechlich eingesetzten Werkzeuge
   // ersetzen und nicht benoetigte Leerzeilen entfernen.
+  //
+  // Hinweis: Die Seite ist bewusst knapp gesetzt, damit beide Erklaerungen
+  // gemeinsam auf eine Seite passen. Wer mehr Tabellenzeilen braucht, loescht
+  // dafuer die leeren Zeilen oder kuerzt die Abstaende (#v(...)) weiter oben.
   #table(
     columns: (auto, auto, 1fr, auto),
     align: (left, left, left, left),
-    inset: 6pt,
+    inset: 5pt,
     stroke: 0.5pt + luma(60%),
 
     table.header(
@@ -102,16 +115,20 @@ Ich habe KI-Werkzeuge für folgende Zwecke eingesetzt (Zutreffendes ankreuzen):
     [z. B. ChatGPT], [GPT-5, 09/2026], [Debugging von Python-Code], [Kap. 4],
     [], [], [], [],
     [], [], [], [],
-    [], [], [], [],
   )
 ]
 
-#v(2.5em)
+#v(1.2em)
 
-// Im Blocksatz wuerde die Zeile auseinandergezogen, daher als Raster gesetzt.
-#grid(
-  columns: (1fr, 1fr),
-  gutter: 1cm,
-  [Ort, Datum: #linie(4.5cm)],
-  [Unterschrift: #linie(4.5cm)],
+// Ort und Datum stammen aus Daten.typ und werden dort zentral gepflegt.
+#ort, #datum
+
+#v(1.2cm)
+#table(
+  columns: (9cm, 2.5cm, 1fr),
+  inset: 1pt,
+  gutter: 0.3cm,
+  stroke: none,
+  [#line(length: 6cm)], [], [],
+  [#vorname #name], [], [],
 )

@@ -92,16 +92,13 @@
   #include "Sections/notwendig/09_Literaturverzeichnis.typ"
   #pagebreak()
 
-  // Auf den abschliessenden Erklaerungen steht kein Kapitelname in der
-  // Kopfzeile, da sie keinem Kapitel des Hauptteils angehoeren.
+  // Auf der abschliessenden Erklaerung steht kein Kapitelname in der
+  // Kopfzeile, da sie keinem Kapitel des Hauptteils angehoert.
   #set page(header: none)
 
-  #include "Sections/notwendig/10_Eidesstattliche_Erklaerung.typ"
-  #pagebreak()
-
-  // Erklaerung zur Nutzung von KI-Werkzeugen. Wird sie nicht verlangt, kann
-  // die folgende Zeile samt vorangehendem #pagebreak() auskommentiert werden.
-  // Die Tabelle der eingesetzten Werkzeuge laesst sich innerhalb der Datei
-  // ueber den Schalter zeige-werkzeugtabelle ein- und ausblenden.
-  #include "Sections/notwendig/11_KI_Erklaerung.typ"
+  // Eigenstaendigkeitserklaerung und Erklaerung zur Nutzung von
+  // KI-Werkzeugen stehen gemeinsam auf einer Seite. Die Tabelle der
+  // eingesetzten Werkzeuge laesst sich innerhalb der Datei ueber den
+  // Schalter zeige-werkzeugtabelle ein- und ausblenden.
+  #include "Sections/notwendig/10_Erklaerungen.typ"
 ]
