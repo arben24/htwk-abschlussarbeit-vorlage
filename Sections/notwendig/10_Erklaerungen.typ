@@ -51,7 +51,7 @@
 
 // --- Erklärung ------------------------------------------------------------
 #text(size: 16pt, weight: "bold")[
-  Eigenständigkeitserklärung und Erklärung zur Nutzung von KI-Werkzeugen
+  Eigenständigkeitserklärung
 ]
 
 #v(0.6em)
@@ -73,8 +73,6 @@ Ich habe KI-Werkzeuge für folgende Zwecke eingesetzt (Zutreffendes ankreuzen):
   #ankreuzfeld(an: true)[Keine Nutzung von KI-Werkzeugen]
 
   #ankreuzfeld(an: false)[Rechtschreibung, Grammatik und sprachliche Überarbeitung]
-
-  #ankreuzfeld(an: false)[Übersetzung von Texten]
 
   #ankreuzfeld(an: false)[Literaturrecherche und Recherche-Unterstützung]
 
@@ -103,18 +101,18 @@ Ich habe KI-Werkzeuge für folgende Zwecke eingesetzt (Zutreffendes ankreuzen):
   // gemeinsam auf eine Seite passen. Wer mehr Tabellenzeilen braucht, loescht
   // dafuer die leeren Zeilen oder kuerzt die Abstaende (#v(...)) weiter oben.
   #table(
-    columns: (auto, auto, 1fr, auto),
-    align: (left, left, left, left),
+    columns: (auto, auto, 1fr,),
+    align: (left, left, left),
     inset: 5pt,
     stroke: 0.5pt + luma(60%),
 
     table.header(
-      [*Werkzeug*], [*Version/Stand*], [*Zweck*], [*Eingesetzt in*],
+      [*Werkzeug*], [*Version/Stand*], [*Zweck*]
     ),
 
-    [z. B. ChatGPT], [GPT-5, 09/2026], [Debugging von Python-Code], [Kap. 4],
-    [], [], [], [],
-    [], [], [], [],
+    [z. B. ChatGPT], [GPT-5, 09/2026], [Debugging von Python-Code],
+    [], [], [],
+    [], [], [],
   )
 ]
 
